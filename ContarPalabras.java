@@ -2,14 +2,16 @@ package InicioApp;
 import java.util.Scanner;
 
 public class CContarPalabras {
+    int contarPalabras = 1;
+    int contarCaracter = 0;
+    
+    static Scanner teclado = new Scanner(System.in);
+    
     public static void main (String[] args){
-        Scanner teclado = new Scanner(System.in);
-        String sCaracter = teclado.nextLine();
-        int iLongitud = sCaracter.length();
-        int contarPalabras = 1;
-        int contarCaracter = 0;
-
         System.out.println("Introduce un Nombre");
+        String sCaracter = teclado.nextLine();
+        
+        int iLongitud = sCaracter.length();
         
         for (int i = 0; i < iLongitud; i++) {
             int iCharConvertido = (int) sCaracter.charAt(i);
